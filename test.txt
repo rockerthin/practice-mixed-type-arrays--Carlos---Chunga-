@@ -33,7 +33,7 @@ console.log(filledArray[0].hobbies[1]);
  filledArray[1].age = 35;
 console.log("Updated filledArray:", filledArray[1].age);
 
-//console.log("filledArray[1]:", filledArray[1]); 
+
 
 //filledArray.push({ hobbies: ['soccer'] });
 filledArray[0].hobbies.push('soccer');
