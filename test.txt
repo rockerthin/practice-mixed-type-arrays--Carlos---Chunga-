@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>Shopping Cart</title>
+</head>
+
+<body>
+
+<script>
+let Profile = Array(5); 
+//let filledArray = Profile.fill({name: 'Rocker', age: 20, isActive: false, address: { city: "Texas" }, hobbies: ["guitar", "coding"]});
+
+// Fill with default user profile objects
+
+let filledArray=Profile.fill({
+  name: 'Rocker',
+  age: 20,
+  subscriptionStatus: false,
+  location: 'Texas',
+  hobbies: ['guitar', 'coding']
+});
+  
+console.log(filledArray[0].name,filledArray[1].age,filledArray[2].subscriptionStatus,filledArray[3].location,filledArray[4].hobbies);  
+
+
+console.log(filledArray[0].name); 
+console.log(filledArray[0].hobbies[1]); 
+
+
+
+ filledArray[1].age = 35;
+console.log("Updated filledArray:", filledArray[1].age);
+
+//console.log("filledArray[1]:", filledArray[1]); 
+
+//filledArray.push({ hobbies: ['soccer'] });
+filledArray[0].hobbies.push('soccer');
+
+console.log("Updated filledArray:", filledArray[0].name,filledArray[1].age,filledArray[2].subscriptionStatus,filledArray[3].location,filledArray[4].hobbies[0],filledArray[4].hobbies[1],filledArray[4].hobbies[2]);
+
+
+</script>
+</body>
+</html>
